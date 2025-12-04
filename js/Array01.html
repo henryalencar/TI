@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        //exercicos sobre ARRAY(VETOR)
+        
+        /*01Faça um algoritmo que receba a idade e o peso de 5 pessoas, guarde esses dados em vetores (idade e peso), calcule e mostre:
+        A quantidade de pessoas com mais de 90 quilos; A média das idades das 5 pessoas.*/
+      
+        const idades = []
+        const peso = []
+        let mais90 = 0
+        let soma = 0
+
+        for( let i = 0; i < 5; i++){    // vai repetir 5 vezes, ou 5 usuarios digitando
+            idades[i] = Number(prompt('dgigte a idade da pessoa' + (i + 1) + ''))
+            peso[i] =  Number(prompt('digite o peso do usario'+ (i + 1) + '' ))
+
+        if(peso [i] > 90){
+        mais90++
+        }
+        soma += idades[i]
+    }
+     const media = soma / idades.length  // lengt tamanho do vetor(capacidade)
+      
+     alert('as pessoas com mais de 90kg : ' + mais90)
+     alert('media das idADES' + media.toFixed(2))
+    //
+    // OUTRA FORMA DE RESOLVER 
+     
+     /*
+     const idades = [50, 40 ,20 ,80 , 18]
+     const peso = [92, 56, 78, 95 , 81]
+     let mais90= 0 
+     let soma = 0
+    
+    for( let i = 0; i < 5; i++){
+        if(peso [i] > 90){
+        mais90++
+    }
+    soma += idades[i]
+    }
+    const media = soma / idades.length
+
+    alert('as pessoas com mais de 90kg : ' + mais90)
+    alert('media das idADES' + media.toFixed(2))
+    */
+    
+
+    </script>
+    
+</body>
+</html>

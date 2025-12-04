@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANALISADOR DE NÚMEROS</title>
+    <link rel="stylesheet" href="AnalisNUM.css">
+</head>
+<body>
+    <section>
+        <h1>Analisador de Numeros</h1>
+
+        <label for="num">Escolha um número de 1 a 100:</label>
+        <input type="number" id="num" min="1" max="100">
+        <button onclick="adicionar()">Adicionar</button>
+        
+        <select id="lista" size="6"></select><br>
+
+        <button onclick="finalizar()">finalizar</button>
+
+        <div id="res"></div>
+    </section>
+
+    <footer>
+    <p>&copy; Henry Alencar</p>
+  </footer>
+    <script src="AnalisNUM.js"></script>
+</body>
+</html>
