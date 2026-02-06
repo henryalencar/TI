@@ -1,14 +1,19 @@
 let numeros = []
-
 function adicionar() {
     const num = document.getElementById("num")
     const lista = document.getElementById("lista")
     const valor = Number(num.value)
 
-    if (valor < 1 || valor > 100 || num.value === '') {
-        alert('Digite um numero valido entre 1 e 100!')
+    num.addEventListener('keypress', function (event) {
+        if (event.key === 'enter'){
+            btnadicionar.click()
+        }
+    })
+
+    if (valor < 1 && valor > 100 || num.value === '') {
+        alert('Digite um numero valido entre 1 e 100')
     } else if (numeros.includes(valor)) {
-        alert('Número já adicionado!')
+        alert('Número ja adicionado!')
     } else {
         numeros.push(valor)
         const item = document.createElement('option')
@@ -22,7 +27,7 @@ function adicionar() {
 
 function finalizar() {
     if (numeros.length === 0) {
-        alert('Adicione números antes de finalizar!')
+        alert('dicione números antes de finalizar')
         return
     }
 
@@ -34,10 +39,10 @@ function finalizar() {
 
     const res = document.getElementById("res")
     res.innerHTML = `
-        <p>Ao todo, temos <strong>${total}</strong> números cadastrados.</p>
+        <p>Ao todo temos <strong>${total}</strong> numeros cadastrados.</p>
         <p>O maior valor informado foi <strong>${maior}</strong>.</p>
-        <p>O menor valor informado foi <strong>${menor}</strong>.</p>
+        <p>o menor valor informado foi <strong>${menor}</strong>.</p>
         <p>Somando todos os valores, temos <strong>${soma}</strong>.</p>
-        <p>A media dos valores digitados é <strong>${media.toFixed(2)}</strong>.</p>
+        <p>A média dos valores digitados é <strong>${media.toFixed(2)}</strong>.</p>
     `
 }

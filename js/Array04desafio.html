@@ -7,7 +7,7 @@
 </head>
 <body>
     <script>
-         //exercicos sobre ARRAY(VETOR)
+        //exercicos sobre ARRAY(VETOR)
            
         /*04 DESAFIO OBRIGATÓRIO Crie um Array chamado admins contendo os nomes: "Alice", "Maria", "Charles". Crie uma variável chamada usuarioAtual com o valor "David" (ou qualquer outro nome). Use um método de Array para verificar se o nome contido em usuarioAtual existe dentro do Array admins. (Dica: Pesquise e use o método .includes()).
        Use uma estrutura if / else para exibir:
@@ -16,8 +16,8 @@
        Tentem fazer a mesma situação utilizando o PROMPT em que o usuário digita o nome que quer procurar
         */
 
-     /*  1 FORMA
-     const admins= ['Alice', 'Maria' , 'Charles']
+      /*  1 FORMA
+      const admins= ['Alice', 'Maria' , 'Charles']
       const usuarioAtual= prompt('digite seu Nome')   
 
       if(admins.includes(usuarioAtual)){              //.includes= determina algo, PHP vamos ver...
@@ -28,16 +28,16 @@
       }
         */
 
-      // 2 FORMA
+    // 2 FORMA
       //usando FOR
 
-      const admins= ['Alice', 'Maria' , 'Charles']
+      const admins= ['Alice', 'Maria' , 'Charles' , 'henry']
       const usuarioAtual= prompt('digite seu Nome')
 
       let usuario = false
 
        for(let  i = 0; i < admins.length; i ++){
-       if(usuarioAtual.toLocaleLowerCase() === admins[i].toLocaleLowerCase()){
+       if(usuarioAtual.toLocaleLowerCase() === admins[i].toLocaleLowerCase()){  // toLocaleLowerCase = converte para letras minusculas
         usuario = true
         break
        }
@@ -49,7 +49,6 @@
        else{
         alert('acesso restrito. faça login como ADM')
        }
-      
 
     </script>
     
