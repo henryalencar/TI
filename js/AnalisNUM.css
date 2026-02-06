@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #000000, #088abd);
+    background: linear-gradient(135deg, #000000, #088abd); /*cor linear-gradient TIPO de efeito bem bonito*/
     color: #000000;
     text-align: center;
     padding: 40px;
@@ -12,7 +12,7 @@ section {
     border-radius: 15px;
     max-width: 400px;
     margin: auto;
-    box-shadow: 0 0 20px rgba(233, 228, 228, 0.836);
+    box-shadow: 0 0 20px rgba(233, 228, 228, 0.836) /*efeito na borda*/
 }
 
 h1 {

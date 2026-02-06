@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>openclose</title>
+</head>
+<body>
+    <input type="button" value="open" onclick="abrir()">
+    <input type="button" value="close" onclick="fechar()">
+    <input type="button" value="imprimir" onclick="window.print()">
+    
+    <script>
+
+        let janela;
+        function abrir(){
+            janela = window.open('https://www.w3schools.com/', 'nome da pagina', '_blank');
+        }
+        //verefica o padrão para(fechar)
+        function fechar(){
+            janela.close()
+        }
+
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>
