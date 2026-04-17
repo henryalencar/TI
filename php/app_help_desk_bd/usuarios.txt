@@ -1,0 +1,15 @@
+henry|henryalencar2007@gmail.com|202cb962ac59075b964b07152d234b70|tecnico
+teste|arisovaldo@hotmail.com|c4ca4238a0b923820dcc509a6f75849b|usuario
+teste|arisovaldo@hotmail.com|6512bd43d9caa6e02c990b0a82652dca|usuario
+teste|arisovaldo@hotmail.com|6512bd43d9caa6e02c990b0a82652dca|usuario
+teste|henryalencar2007@gmail.com|202cb962ac59075b964b07152d234b70|usuario
+teste|henryalencar2007@gmail.com|202cb962ac59075b964b07152d234b70|usuario
+henry|henryalencar2007@gmail.com|202cb962ac59075b964b07152d234b70|tecnico
+hhhhh|joicy_sn@hotmail.com|45c48cce2e2d7fbdea1afc51c7c6ad26|tecnico
+hhhhh|joicy_sn@hotmail.com|45c48cce2e2d7fbdea1afc51c7c6ad26|tecnico
+henry|marcos@senacsp.edu.br|92daa86ad43a42f28f4bf58e94667c95|adiministrador
+henry|henryalencar2007@gmail.com|202cb962ac59075b964b07152d234b70|admin
+henry|henryalencar2007@gmail.com|202cb962ac59075b964b07152d234b70|admin
+teste|henryalencar2007@gmail.com|b0baee9d279d34fa1dfd71aadb908c3f|tecnico
+teste|henryalencar2007@gmail.com|b0baee9d279d34fa1dfd71aadb908c3f|tecnico
+hhhhh|marcos@senacsp.edu.br|024d7f84fff11dd7e8d9c510137a2381|usuario
