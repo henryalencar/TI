@@ -1,0 +1,41 @@
+=  <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Nova js</title>
+</head>
+<body>
+    
+<script>
+     /**exe Lista Nova PARA
+      02
+Problema "soma_impares" (adaptado de URI 1071)
+Leia 2 valores inteiros X e Y (em qualquer ordem). A seguir, calcule e mostre a soma dos números
+impares entre eles.  
+.*/
+  //Variáveis/ Entrada 
+   
+  //Entrada de dados
+  let x = Number(prompt('Digite o valor x'))
+  let y = Number(prompt('Digite o valor y'))
+
+  
+  //Processamento
+  if (x > y) {
+  let temp = x
+  x = y
+  y = temp
+}
+//
+let soma = 0
+for (let i = x + 1; i < y; i++) {
+  if (i % 2 !== 0) {
+    soma += i
+  }
+}
+  //Saída de dados
+ alert('a soma é: ' + soma)
+
+  </script>
+    

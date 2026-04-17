@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #d6d6d6;
+  margin-top: 50px;
+}
+
+.caixa {
+  background: rgb(116, 206, 104);
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+#resultado {
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+img {
+  margin-top: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+button {
+  background: #243d25;
+  color: rgb(173, 5, 5);
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+}
+button:hover {
+  background: #b4bdb4;
+}

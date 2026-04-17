@@ -1,0 +1,54 @@
+  <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Nova</title>
+</head>
+<body>
+    
+<script>
+     /**exe Lista Nova
+      07
+    Problema "dardo"
+No arremesso de dardo, o atleta tem três chances para lançar o dardo à maior distância que conseguir.
+Você deve criar um programa para, dadas as medidas das três tentativas de lançamento, informar qual
+foi a maior. 
+ */
+
+
+    //Variáveis/ Entrada 
+   
+    
+    //Entrada de dados
+     
+    let dardo1= Number.parseInt(prompt(' digite a distancia do 1 dardo'))
+    let dardo2= Number.parseInt(prompt(' digite a distancia do 2 dardo'))
+    let dardo3= Number.parseInt(prompt(' digite a distancia do 3 dardo'))
+    
+    
+    
+
+
+    //Processamento
+    
+     let maior = dardo1
+
+     if(dardo1 > maior){
+      maior = dardo2
+     }
+
+     if(dardo3 > maior){
+     maior = dardo3
+     }
+      
+    
+   
+  
+
+  //Saída de dados
+     alert('A Maior diastancia:' + maior.toFixed(2))
+   
+        
+    </script>
+    

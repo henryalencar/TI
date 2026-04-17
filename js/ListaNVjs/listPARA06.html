@@ -1,0 +1,45 @@
+=  <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Nova js</title>
+</head>
+<body>
+    
+<script>
+     /**exe Lista Nova PARA
+      06
+Problema "media_ponderada" (adaptado de URI 1079)
+Leia um valor inteiro N, que representa o número de casos de teste que vem a seguir. Cada caso de
+teste consiste de 3 valores reais, para os quais você deverá calcular e mostrar a média ponderada, sendo
+que o primeiro valor tem peso 2, o segundo valor tem peso 3 e o terceiro valor tem peso 5. Vale lembrar
+que a média ponderada é a soma de todos os valores multiplicados pelo seu respectivo peso, dividida
+pela soma dos pesos. 
+ 
+
+
+.*/
+  //Variáveis/ Entrada 
+   
+  //Entrada de dados
+let n = Number(prompt('Digite quantos casos para teste: '))
+
+  //Processamento
+  
+for(let i = 1 ; i<= n ; i++){
+  let valores = prompt(`digite 3 valores Reais${i} no espaço`) .split(' ')   // .SPLIT= Divide em partes menores (dividir)
+  let a = Number(valores [0])
+  let b = Number(valores [1])
+  let c = Number(valores [2])
+
+  let media = (a * 2 + b * 3 + c * 5) /10 
+  document.write(` media do ${i} é: ${media.toFixed(1)} <br> `)
+}
+                              
+
+
+  //Saída de dados
+
+</script>
+    

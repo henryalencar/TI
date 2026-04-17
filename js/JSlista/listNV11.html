@@ -1,0 +1,61 @@
+  <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Nova</title>
+</head>
+<body>
+    
+<script>
+     /**exe Lista Nova
+      11
+Uma empresa vai conceder um aumento percentual de salário aos seus funcionários dependendo de quanto cada pessoa ganha, conforme tabela ao lado. Fazer um programa para ler o salário de uma pessoa, daí mostrar qual o novo salário desta pessoa depois do aumento, quanto foi o aumento e qual foi a porcentagem de aumento.
+ 
+ */
+
+
+    //Variáveis/ Entrada 
+   
+    
+    //Entrada de dados
+     
+    let salario= parseFloat(prompt('digite o seu salario'))
+    let percentual
+    let aumento
+    let salnovo 
+    //Processamento
+
+   
+    
+    if(salario <= 1000){
+      percentual = 20
+    }
+
+    else if( salario <= 3000){
+      percentual = 15
+    }
+    else if( salario <= 8000){
+      percentual = 10
+    }
+    
+    else{
+      percentual = 5
+    }
+   
+    aumento= salario * (percentual / 100)
+    salnovo= salario + aumento
+
+  //Saída de dados
+
+  alert(
+  ' O salario antigo R$ :' + salario.toFixed(2) 
+  + ' percentual do aumento ' + percentual + '%' 
+  + ' aumento em R$ ' + aumento.toFixed(2) 
+  + ' salario novo em R$ ' + salnovo.toFixed(2)
+)
+  
+  
+        
+    </script>
+    

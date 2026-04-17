@@ -1,0 +1,52 @@
+  <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Nova</title>
+</head>
+<body>
+    
+<script>
+     /**exe Lista Nova
+      05
+     Problema "troco_verificado"
+    Fazer um programa para calcular o troco no processo de pagamento de um produto de uma mercearia.
+    O programa deve ler o preço unitário do produto, a quantidade de unidades compradas deste produto,
+   e o valor em dinheiro dado pelo cliente. Seu programa deve mostrar o valor do troco a ser devolvido
+   ao cliente. Se o dinheiro dado pelo cliente não for suficiente, mostrar uma mensagem informando o
+valor restante conforme exemplo*/
+
+
+    //Variáveis/ Entrada 
+   
+    
+    //Entrada de dados
+     
+    let preco= Number.parseInt(prompt(' digite o preço'))
+    let quantidade= Number.parseInt(prompt(' digite a quantidade'))
+    let unidades= Number.parseInt(prompt(' digite a unidades'))
+
+
+    //Processamento
+    
+     let total = preco * quantidade
+
+
+     if (unidades >= total){
+      let troco = unidades - total
+      alert('Troco = R$' + troco.toFixed(2)) 
+     }
+   
+      
+    else{
+      let faltante = total - unidades
+      
+    }
+
+  //Saída de dados
+     alert('Dinheiro faltando. falta em R$' + faltante. toFixed(2))
+   
+        
+    </script>
+    

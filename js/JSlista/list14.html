@@ -1,0 +1,49 @@
+  <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista</title>
+</head>
+<body>
+    <script>
+
+     /*exe 14
+     14. Crie um programa que simule o custo total de um empréstimo pessoal com base no modelo de juros compostos. O programa deve solicitar as informações ao usuário,
+      calcular o montante final e o valor das parcelas. Entradas: Valor Principal do Empréstimo, Taxa de Juros Mensal e Prazo Total.
+      Exiba em alert()s separados o Montante, o Valor da Parcela Mensal e o valor dos Juros.
+      Use toFixed(2) em ambos os resultados de dinheiro para exibir duas casas decimais. Fórmula: M = C * (1 + i) elevado a t.*/
+
+    //Variáveis/ Entrada 
+    var c, i, t, m, juros, parcela, Math
+
+    
+    //Entrada de dados
+      c=parseFloat(prompt('Digite o valor 1'))
+      i=parseFloat(prompt('Digite  o valor 2'))
+      t=parseFloat(prompt('Digite o valor 3 '))
+    
+        
+    //Processamento
+    
+     M = C * Math.pow((1 + i), t);
+    juros= M - C;
+    parcela = M / t;
+
+
+       
+
+  //Saída de dados
+      
+    alert('o Montante final ; '+ m)
+
+    alert('o Valor da parcela  ; '+ parcela)
+
+    alert('o "Total de juros   ; '+ juros)
+   
+   
+    
+        
+        
+    </script>
+    

@@ -1,0 +1,75 @@
+  <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Nova</title>
+</head>
+<body>
+    
+<script>
+     /**exe Lista Nova
+ 09
+ Problema "lanchonete" (adaptado de URI 1038)
+Uma lanchonete possui vários produtos. Cada produto possui um código
+e um preço. Você deve fazer um programa para ler o código e a
+quantidade comprada de um produto (suponha um código válido), e daí
+informar qual o valor a ser pago, com duas casas decimais, conforme
+tabela de produtos ao lado. 
+ 
+ */
+
+
+    //Variáveis/ Entrada 
+   
+    
+    //Entrada de dados
+     
+  
+  let produto = parseInt(prompt(' Digite qual o produto de 1 a 5... '))
+  let quantidade = parseInt(prompt(' Digite a quantidade comprada... '))
+  let preco
+   
+
+    //Processamento
+    
+    if (produto === 1){
+      preco = 4.00
+    }
+
+    else if(produto === 2){
+      preco = 4.50
+    }
+
+    else if(produto === 3){
+      preco = 5.00
+    }
+
+    else if(produto === 4){
+      preco = 2.00
+    }
+
+     else if(produto === 5){
+      preco = 1.50
+    }
+
+    else{
+      alert('Produto invalido!')
+    }
+
+    
+   let total = preco * quantidade
+  
+
+  //Saída de dados
+  alert('Total: R$ ' + total.toFixed(2))
+  
+
+  // NOVO let codigo =  Number.parseInt(promp(''
+
+
+
+     
+        
+    </script>
+    

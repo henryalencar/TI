@@ -1,0 +1,53 @@
+  <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Nova</title>
+</head>
+<body>
+    <script>
+
+     /*exe Lista Nova
+      02
+     Fazer um programa para ler os três coeficientes de uma equação do segundo grau. Usando a fórmula
+     de Baskara, calcular e mostrar os valores das raízes x1 e x2 da equação com quatro casas decimais,
+     conforme exemplo. Se a equação não possuir raízes reais, mostrar uma mensagem. */
+
+    //Variáveis/ Entrada 
+   
+    
+    //Entrada de dados
+     
+    let a= Number.parseFloat(prompt(' digite Coeficiente a'))
+    let b= Number.parseFloat(prompt(' digite Coeficiente b'))
+    let c= Number.parseFloat(prompt(' digite Coeficiente c'))
+
+
+    //Processamento
+    
+     //equacão=   Delta =b^{2}-4ac\
+     let delta= b * b - 4 * a * c;
+     
+
+    if (delta < 0){
+      
+      alert(`A equação nao possui raizes reais`)
+    }
+
+    else{
+      let x1 = (- b + Math.sqrt(delta)) / (2 * a);
+      let x2 = (- b - Math.sqrt(delta)) / (2 * a);
+      
+    }
+
+    alert(`x1 =${x1.toFixed(4)} / x2 = ${x2.toFixed(4)}`)
+  
+
+  //Saída de dados
+
+   
+        
+        
+    </script>
+    

@@ -1,0 +1,50 @@
+  <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Nova</title>
+</head>
+<body>
+    
+<script>
+     /**exe Lista Nova
+      06
+    Problema "glicose"
+    Fazer um programa para ler a quantidade de glicose
+    no sangue de uma pessoa e depois mostrar na tela a
+    classificação desta glicose de acordo com a tabela de
+    referência ao lado. */
+
+
+    //Variáveis/ Entrada 
+   
+    
+    //Entrada de dados
+     
+    let Glicose= Number.parseInt(prompt(' digite a Medida'))
+    
+  
+    //Processamento
+    
+     let classificacao
+
+     if(Glicose <= 100){
+      classificacao='Normal'
+     }
+
+     else if(Glicose<= 140){
+      classificacao='Elevado'
+     }
+
+     else{
+      classificacao='Diabetes'
+     }
+  
+
+  //Saída de dados
+     alert('A classificação é:' + classificacao)
+   
+        
+    </script>
+    

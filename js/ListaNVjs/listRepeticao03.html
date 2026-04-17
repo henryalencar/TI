@@ -1,0 +1,37 @@
+  <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Nova js</title>
+</head>
+<body>
+    
+<script>
+     /**exe Lista Nova CRECENETE
+      03
+      
+Problema "senha_fixa" (adaptado de URI 1114)
+Escreva um programa que repita a leitura de uma senha até que ela seja válida. Para cada leitura de
+senha incorreta informada, escrever a mensagem "Senha Invalida! Tente novamente:". Quando a senha
+for informada corretamente deve ser impressa a mensagem "Acesso Permitido" e o algoritmo
+encerrado. Considere que a senha correta é o valor 2002. 
+
+.*/
+  //Variáveis/ Entrada 
+   
+  //Entrada de dados
+  let senha = Number(prompt('digite a senha:'))
+   
+  //Processamento
+  
+ while (senha !== 2002){
+ senha = Number(prompt('Digite a senha novamente'))
+ alert('sua senha é invalida')
+ }
+   
+  //Saída de dados
+  alert('Acesso Permetido!')
+        
+    </script>
+    

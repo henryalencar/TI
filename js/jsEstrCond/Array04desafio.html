@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        //exercicos sobre ARRAY(VETOR)
+           
+        /*04 DESAFIO OBRIGATÓRIO Crie um Array chamado admins contendo os nomes: "Alice", "Maria", "Charles". Crie uma variável chamada usuarioAtual com o valor "David" (ou qualquer outro nome). Use um método de Array para verificar se o nome contido em usuarioAtual existe dentro do Array admins. (Dica: Pesquise e use o método .includes()).
+       Use uma estrutura if / else para exibir:
+       - Se o usuário for admin: "Acesso total concedido. Bem-vindo(a), [Nome do Usuário]."
+       - Se o usuário não for admin: "Acesso restrito. Faça login como administrador."
+       Tentem fazer a mesma situação utilizando o PROMPT em que o usuário digita o nome que quer procurar
+        */
+
+      /*  1 FORMA
+      const admins= ['Alice', 'Maria' , 'Charles']
+      const usuarioAtual= prompt('digite seu Nome')   
+
+      if(admins.includes(usuarioAtual)){              //.includes= determina algo, PHP vamos ver...
+        alert('acesso total permetido. Bem vindo(a) ' + usuarioAtual)
+      }
+      else{
+        alert('acesso restrito. faça login como ADM')
+      }
+        */
+
+    // 2 FORMA
+      //usando FOR
+
+      const admins= ['Alice', 'Maria' , 'Charles' , 'henry']
+      const usuarioAtual= prompt('digite seu Nome')
+
+      let usuario = false
+
+       for(let  i = 0; i < admins.length; i ++){
+       if(usuarioAtual.toLocaleLowerCase() === admins[i].toLocaleLowerCase()){  // toLocaleLowerCase = converte para letras minusculas
+        usuario = true
+        break
+       }
+       }
+
+       if(usuario){
+        alert('acesso total permetido. Bem vindo(a)' + usuarioAtual)
+       }
+       else{
+        alert('acesso restrito. faça login como ADM')
+       }
+
+    </script>
+    
+</body>
+</html>

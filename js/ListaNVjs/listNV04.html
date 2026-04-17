@@ -1,0 +1,47 @@
+  <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Nova</title>
+</head>
+<body>
+    <script>
+
+     /*exe Lista Nova
+      04
+     Problema "operadora"
+    U ma operadora de telefonia cobra R$ 50.00 por um plano básico que dá direito a 100 minutos de
+    telefone. Cada minuto que exceder a franquia de 100 minutos custa R$ 2.00. Fazer um programa para
+    ler a quantidade de minutos que uma pessoa consumiu, daí mostrar o valor a ser pago. 
+*/
+
+    //Variáveis/ Entrada 
+   
+    
+    //Entrada de dados
+     
+    let minutos= Number.parseInt(prompt(' digite a quantidade de minutos'))
+    
+
+
+    //Processamento
+    
+     let valor = 50.0;
+
+
+     if(minutos > 100){
+      valor += (minutos - 100) * 2.0;
+
+     }
+   
+      alert('o valor a ser pago:' + valor .toFixed(2))
+   
+  
+
+  //Saída de dados
+
+   
+        
+    </script>
+    

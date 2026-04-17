@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrows</title>
+</head>
+<body>
+
+    <!--exe02 Pegar algum exercio ja feito e criar funções arrows...--> 
+
+    <button id="btn">criar</button>
+    <div id="area"></div>
+
+    <script>  //numera os paragrafos
+        let n = 1
+        const criar = () => {
+            const p = documet.createElement('p')
+            p.textContent =`paragrafo ${n}`
+            area.appenchild(p)
+            n++
+        }
+        btn.addEventListener('click' ,() => criar())
+    
+        //OU
+
+        /*
+        <button id="btn">Criar</button>
+        <div id="area"></div>
+
+        <script>
+        btn.onclick = () => {
+        area.innerHTML += "<p>Criado!</p>";
+        };
+        */
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista</title>
+</head>
+<body>
+    <script>
+
+        /*exe 05
+        5. Elabore um programa para calcular a quantidade de litros de combustível consumida em uma viagem. O usuário deve entrar com: distância percorrida (em km)
+        e consumo médio do veículo (Km por litro). Calcule a quantidade total de litros consumida na viagem. Como resultado exiba uma frase que diga:
+        "Para percorrer [distância] km, 
+        foram necessários [litros] litros de combustível." (Use as variáveis concatenadas na frase). Lógica: Litros=Distancia_Percorrida / Consumo_Medio.*/
+
+      //Variáveis/ Entrada 
+      var distância, consumo, quantidade
+      
+
+      //Entrada de dados
+      
+     distância=parseFloat(prompt('distancia em km'))
+     consumo=parseFloat(prompt('consumo em km/l'))
+        
+        
+     //Processamento
+
+      
+      quantidade= distância / consumo
+       
+       
+
+    //Saída de dados
+        
+     alert(quantidade)
+      alert('Para percorrer' + distância + 'km foram necessários litros litros de combustível.')
+
+    
+        
+        
+    </script>
+    

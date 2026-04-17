@@ -1,0 +1,51 @@
+=  <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Nova js</title>
+</head>
+<body>
+    
+<script>
+     /**exe Lista Nova PARA
+      05
+Problema "par_impar" (adaptado de URI 1074)
+Leia um valor inteiro N. Este valor será a quantidade de números inteiros que serão lidos em seguida.
+Para cada valor lido, mostre uma mensagem dizendo se este valor lido é PAR ou IMPAR, e também
+se é POSITIVO ou NEGATIVO. No caso do valor ser igual a zero (0), seu programa deverá imprimir
+apenas NULO. 
+
+
+.*/
+  //Variáveis/ Entrada 
+   
+  //Entrada de dados
+let n = Number(prompt('Digite quantos numeros INTEIROS'))
+
+  //Processamento
+for(let i = 1 ; i<= n ; i++){
+let x = Number(prompt(` digite o ${i} numero inteiro`))
+
+if(x === 0){
+document.write('NULO')
+}
+
+else if( x % 2 === 0 && x > 0){
+document.write('Par Positivo <br>')
+}
+else if( x % 2 === 0 && x < 0){
+document.write('Par Negativo <br>')
+}
+else if( x % 2 !== 0 && x > 0){
+document.write('Impar Positivo <br>')
+}
+else{
+document.write('Impar Negativo <br>')  //document.write = comando de saída,(apararece na tela) 
+}                                      //console.log = comando de saída no Navegador (console navegador)
+}
+
+  //Saída de dados
+
+</script>
+    

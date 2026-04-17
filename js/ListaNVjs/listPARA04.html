@@ -1,0 +1,43 @@
+=  <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Nova js</title>
+</head>
+<body>
+    
+<script>
+     /**exe Lista Nova PARA
+      04
+Problema "dentro_fora" (adaptado de URI 1072)
+Leia um valor inteiro N. Este valor será a quantidade de valores inteiros X que serão lidos em seguida.
+Mostre quantos destes valores X estão dentro do intervalo [10,20] e quantos estão fora do intervalo,
+conforme exemplo 
+
+
+.*/
+  //Variáveis/ Entrada 
+   
+  //Entrada de dados
+let n = Number(prompt('Digite quantos numeros $'))
+let dentro = 0
+let fora = 0 
+  
+  //Processamento
+for(let i = 1 ; i<= n ; i++){
+let x = Number(prompt(`${i} valor do N INTEIRO`))
+
+if(x >= 10 && x <= 20 ){
+  dentro++
+}
+else{
+  fora++
+}
+}
+  //Saída de dados
+console.log(`${dentro} in`)   //document.write = comando de saída,(apararece na tela) 
+console.log(`${fora} out`)    //console.log = comando de saída no Navegador (console navegador)
+
+</script>
+    

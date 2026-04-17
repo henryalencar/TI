@@ -1,0 +1,47 @@
+  <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Nova js</title>
+</head>
+<body>
+    
+<script>
+     /**exe Lista Nova CRECENETE
+      02
+      
+Problema "media_idades"
+Faça um programa para ler um número indeterminado de dados, contendo cada um, a idade de um
+indivíduo. O último dado, que não entrará nos cálculos, contém um valor de idade negativa. Calcular
+e imprimir a idade média deste grupo de indivíduos. Se for entrado um valor negativo na primeira vez,
+mostrar a mensagem "IMPOSSIVEL CALCULAR"
+.*/
+  //Variáveis/ Entrada 
+   
+  //Entrada de dados
+
+   
+  //Processamento
+  let somaIdades = 0;
+    let contador = 0;
+
+    while (true) {
+    let idade = parseInt(prompt("Digite uma idade (ou um valor negativo para encerrar):"));
+
+    if (idade < 0) {
+    if (contador === 0) {
+    alert("IMPOSSIVEL CALCULAR");
+    } else {
+    let media = somaIdades / contador;
+    alert(`A idade média do grupo é: ${media.toFixed(2)}`);
+    }
+    break; 
+    }
+
+    somaIdades += idade; 
+
+    contador ++;
+        }
+    </script>
+    

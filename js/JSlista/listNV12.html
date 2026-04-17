@@ -1,0 +1,39 @@
+  <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Nova</title>
+</head>
+<body>
+    
+<script>
+     /**exe Lista Nova
+      12
+ Leia a hora inicial e a hora final de um jogo. A seguir calcule a duração do jogo, sabendo que o mesmo pode começar em um dia e terminar em outro, tendo uma duração mínima de 1 hora e máxima de 24 horas.
+ 
+ */
+    //Variáveis/ Entrada 
+   
+    //Entrada de dados
+     
+    let horaI=parseInt(prompt('digite a Hora inicial, de 0 a 23'))
+    let horaF=parseInt(prompt('digite a Hora Final, de 0 a 23'))
+    let duracao
+    //Processamento
+
+   if(horaI > horaF){
+    duracao= horaF - horaI
+   }
+
+   else{
+    duracao= 24 - horaI + horaF
+   }
+
+  //Saída de dados
+
+  alert(' A quantidade de horas no Jogo ' + duracao + ' horas ')
+  
+        
+    </script>
+    
