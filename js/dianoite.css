@@ -1,0 +1,30 @@
+body{
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 60px;
+  background-color: #ffffff;
+}
+.caixa {
+  background: rgb(88, 100, 167);
+  width: 350px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+button {
+  padding: 9px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover {
+  background: #f80101;
+}
+#resultado{
+    margin-top: 10px;
+    font-weight: bold;
+    margin: 15px;
+}

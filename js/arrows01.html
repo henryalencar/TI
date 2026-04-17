@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrows</title>
+</head>
+<body>
+
+    <!--exe01 Criar uma div com um paragrafo ao clicar no botao-->
+
+    <button id="btn">criar</button>
+    <div id="area"></div>
+
+    <script>
+        const criar =() => {
+        const p = window.document.createElement('p')
+        p.textContent ='criar'
+        area.appenchild(p)
+        }
+        btn.onclick = criar
+
+    </script>
+    
+</body>
+</html>

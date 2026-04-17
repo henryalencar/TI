@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        //exercicos sobre ARRAY(VETOR)
+           
+        /*03 Crie um Array chamado produtos com pelo menos 5 nomes de itens de informática (ex: "Mouse Gamer", "Teclado Mecânico", etc.). Crie um laço de repetição for para percorrer o Array. Dentro do laço, exiba uma mensagem para cada produto no formato:
+
+        "O produto [NOME DO PRODUTO] é o item número [NÚMERO DO ITEM] do catálogo."
+        (Dica: Lembre-se que o índice começa em 0, então o número do item deve ser índice + 1).
+        Use o método pop() para simular a remoção do último produto em estoque e exiba
+        A mensagem: "O produto [nome do produto] foi removido".
+        */
+
+      const produtos = ['Mouse Gamer ', 'Teclado mecanico ' , 'Monitor ', 'Cadeira Gamer', 'PC ']
+
+      for(let i = 0 ; i < produtos.length;  i++){
+      alert('o produto  ' +  produtos[i] + 'o item numero ' + (i + 1) + 'catalogo ')
+      }
+      
+      const removido = produtos.pop()
+
+      alert('os produtos + ' + removido + 'foi removido: ')
+
+    </script>
+    
+</body>
+</html>
