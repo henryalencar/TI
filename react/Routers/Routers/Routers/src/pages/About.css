@@ -1,0 +1,8 @@
+p{
+    color: white;
+    background-color: rgba(199, 10, 183, 0.849);
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

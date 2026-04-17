@@ -1,0 +1,125 @@
+/* Container geral */
+.login-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* título + card */
+  justify-content: center;
+  align-items: center;
+  background: url("/lambor1.jpg") no-repeat center;
+  background-size: cover;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+
+/* Overlay escuro para destacar o card */
+.login-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 0;
+  backdrop-filter: blur(2px);
+}
+
+/* Título acima do card */
+.login-title {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 30px;
+  font-size: 38px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 2px;
+  text-align: center;
+  text-shadow: 2px 2px 12px rgba(0,0,0,0.8);
+  transition: 0.3s;
+}
+
+/* Card de login */
+.login-card {
+  position: relative;
+  z-index: 1;
+  width: 380px;
+  max-width: 90%;
+  padding: 40px 30px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+/* Animação de entrada do card */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Inputs */
+.login-card input {
+  width: 100%;
+  padding: 15px 18px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.login-card input::placeholder {
+  color: #ccc;
+}
+
+/* Foco no input */
+.login-card input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Botão */
+.login-card button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #1b1b1b, #555);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+/* Hover no botão */
+.login-card button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #222, #888);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+}
+
+/* Responsividade para telas pequenas */
+@media screen and (max-width: 420px) {
+  .login-card {
+    padding: 30px 20px;
+  }
+  .login-title {
+    font-size: 32px;
+  }
+  .login-card input, .login-card button {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
