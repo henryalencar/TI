@@ -1,0 +1,99 @@
+/*
+    Instruções do CSS:
+
+    Passo 1: Container Principal
+    - Transforme o elemento com a classe 'dashboard-container' em um contêiner flexível.
+    - Centralize os itens na horizontal.
+    - Quebre a linha quando não houver espaço suficiente para todos os cards.
+
+    Passo 2: Ordenação dos Cards
+    - Usando a propriedade 'order', mude a ordem dos cards para que fiquem dispostos da seguinte forma:
+        - Primeiro: Card de 'Pedidos Pendentes' (classe .card-1)
+        - Segundo: Card de 'Mensagens não Lidas' (classe .card-5)
+        - Terceiro: Card de 'Receita Total' (classe .card-2)
+        - Quarto: Card de 'Novos Usuários' (classe .card-3)
+        - Último: Card de 'Produtos em Estoque' (classe .card-4)
+
+    Passo 3: Estilos dos Cards
+    - Para todos os cards com a classe 'card', defina a largura para 200px.
+    - Adicione um espaçamento de 15px entre todos os cards.
+*/
+
+/* Estilos Gerais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f0f2f5;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Passo 1: Container Principal */
+.dashboard-container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 200px;
+    
+    gap: 15px;
+
+    
+    
+    /* Seu código flexbox para o container principal aqui */
+
+}
+
+/* Passo 2 e 3: Cards */
+.card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 6px;
+    text-align: center;
+    border-left: 5px solid;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    
+    
+    
+    
+    /* Seu código para os cards aqui */
+
+}
+
+
+
+
+
+.card h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.card p {
+    font-size: 2em;
+    color: #333;
+}
+
+/* Estilos de cores para cada card */
+.card-1 { border-color: #ff6347; } /* Tomato */
+.card-2 { border-color: #2e8b57; } /* SeaGreen */
+.card-3 { border-color: #1e90ff; } /* DodgerBlue */
+.card-4 { border-color: #ffd700; } /* Gold */
+.card-5 { border-color: #9370db; } /* MediumPurple */

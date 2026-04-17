@@ -1,0 +1,169 @@
+/*
+    Instruções do CSS:
+
+    Passo 1: Header Responsivo
+    - Transforme o header em um contêiner flexível.
+    - Defina que o elemento 'nav' cresça para ocupar todo o espaço restante.
+    - Alinhe os links de navegação para a direita.
+    - Em telas pequenas (max-width: 600px), mude a direção do header para coluna.
+
+    Passo 2: Seção de Serviços
+    - O contêiner '.service-container' deve ser um contêiner flexível.
+    - Faça com que os cartões de serviço (`.service-card`) cresçam para preencher o espaço de forma igual.
+    - Permita a quebra de linha.
+
+    Passo 3: Seção de Destaque
+    - Transforme a seção '.highlight' em um contêiner flexível.
+    - Defina a ordem padrão dos itens (texto antes da imagem).
+    - Em telas maiores (min-width: 768px), use a propriedade `order` para inverter a ordem, fazendo a imagem aparecer primeiro.
+
+    Passo 4: Rodapé Completo
+    - Transforme o contêiner '.footer-columns' em um contêiner flexível.
+    - Alinhe a coluna `.copyright` para o centro.
+    - Alinhe o resto dos itens com um bom espaçamento.
+*/
+
+/* Estilos Gerais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f0f4f8;
+    line-height: 1.6;
+}
+
+/* Passo 1: Header Responsivo */
+header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+  
+
+    /* Seu código Flexbox para o header aqui */
+
+}
+
+header nav a {
+    margin-left: 20px;
+}
+
+/* Passo 2: Seção de Serviços */
+.services {
+    padding: 40px 20px;
+    text-align: center;
+   
+}
+
+.service-container {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+    /* Seu código para o contêiner de serviços aqui */
+
+}
+
+.service-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    min-width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 50px;
+    padding: 50px;
+    
+    /* Seu código para os cartões de serviço aqui */
+
+}
+
+/* Passo 3: Seção de Destaque */
+.highlight {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+   
+   
+    
+    /* Seu código para a seção de destaque aqui */
+
+}
+
+.highlight .image-box img {
+    width: 100%;
+    border-radius: 8px;
+    order: 1;
+   
+   
+}
+
+.highlight .text-content {
+    padding: 20px;
+    order: 0;
+   
+    
+}
+
+.highlight a {
+    display: inline-block;
+    background-color: #c79898;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+    
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 600px) {
+    header 
+    
+    {
+      
+        /* Mude a direção para telas pequenas */
+    }
+}
+
+@media (min-width: 768px) {
+    .highlight {
+        /* Use order para inverter a ordem em telas maiores */
+    }
+}
+
+/* Passo 4: Rodapé Completo */
+footer {
+    background-color: #d30a0a;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    
+    /* Seu código para o rodapé aqui */
+
+}
+
+.footer-columns {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+    /* Seu código para as colunas do rodapé aqui */
+}
+
+.contact, .links {
+    margin: 20px;
+}

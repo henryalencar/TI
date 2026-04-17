@@ -1,0 +1,83 @@
+<!--Layout de Landing Page Responsiva (Nível Avançado)
+
+Enunciado: O objetivo desta atividade é construir uma landing page completa, simulando uma apresentação empresarial. Você utilizará as propriedades avançadas do Flexbox para controlar o crescimento dos elementos, a ordem de exibição e a responsividade em diferentes tamanhos de tela.
+
+Instruções:
+1 - Header Responsivo: No contêiner <header>, use Flexbox para que o logo (.logo) ocupe o espaço necessário e a navegação (nav) cresça para preencher o restante, alinhando os links à direita. Em telas menores (menor que 600px), mude a direção do Flexbox para empilhar os itens (h1 e nav) verticalmente.
+2 - Seção de Serviços: Na seção .services, os cartões de serviço (.service-card) devem ter uma largura mínima, mas precisam crescer (flex-grow) para preencher o espaço disponível de forma igual.
+3 - Seção de Destaque: Na seção .highlight, inverta a ordem dos elementos (.text-content e .image-box) para que a imagem apareça antes do texto, mas apenas em telas maiores. Em telas menores (menor que 768px), o texto deve vir antes da imagem.
+4 - Rodapé Completo: No rodapé, alinhe os elementos de forma que a coluna de contato (.contact) e a coluna de links (.links) fiquem lado a lado, e a coluna de direitos autorais (.copyright) se alinhe ao centro.-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa Modelo - Landing Page</title>
+    <link rel="stylesheet" href="atividade10.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Empresa XYZ</h1>
+        </div>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Serviços</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="services">
+            <h2>Nossos Serviços</h2>
+            <div class="service-container">
+                <div class="service-card">
+                    <h3>Consultoria</h3>
+                    <p>Orientação especializada para seus projetos.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Desenvolvimento</h3>
+                    <p>Criação de soluções web e mobile.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Suporte</h3>
+                    <p>Manutenção e suporte técnico contínuo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="highlight">
+            <div class="text-content">
+                <h2>Soluções Inovadoras</h2>
+                <p>Nossa equipe está pronta para transformar suas ideias em realidade com tecnologia de ponta e um design impecável.</p>
+                <a href="#">Saiba mais</a>
+            </div>
+            <div class="image-box">
+                <img src="https://picsum.photos/id/43/600/400" alt="Equipe em reunião">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-columns">
+            <div class="contact">
+                <h3>Contato</h3>
+                <p>Email: contato@empresa.com</p>
+                <p>Telefone: (99) 99999-9999</p>
+            </div>
+            <div class="links">
+                <h3>Links Úteis</h3>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Serviço</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Empresa XYZ. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

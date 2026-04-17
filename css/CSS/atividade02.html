@@ -1,0 +1,56 @@
+<!--Layout com Flexbox e Elementos Semânticos
+
+Enunciado: Nesta atividade, você vai organizar a estrutura de uma página web usando Flexbox e os elementos semânticos do HTML (<header>, <main>, <footer> e <article>). O desafio é posicionar os elementos internos de cada seção de acordo com as instruções, simulando o layout de um blog ou portfólio.
+    -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Semântico com Flexbox</title>
+    <link rel="stylesheet" href="atividade02.css">
+</head>
+<body>
+
+    <header class="flex-header">
+        <h1 class="logo">Meu Blog</h1>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <main class="flex-main">
+        <section class="flex-section">
+            <h2>Últimos Artigos</h2>
+            <article class="flex-article">
+                <h3>Flexbox na Prática</h3>
+                <p>Aprenda a criar layouts flexíveis de forma simples e poderosa.</p>
+                <a href="#">Ler mais</a>
+            </article>
+            <article class="flex-article">
+                <h3>CSS Grid vs Flexbox</h3>
+                <p>Entenda as diferenças e saiba quando usar cada um.</p>
+                <a href="#">Ler mais</a>
+            </article>
+            <article class="flex-article">
+                <h3>Animações com CSS</h3>
+                <p>Crie efeitos visuais incríveis sem usar JavaScript.</p>
+                <a href="#">Ler mais</a>
+            </article>
+        </section>
+    </main>
+
+    <footer class="flex-footer">
+        <p>&copy; 2024 Meu Blog. Todos os direitos reservados.</p>
+        <div class="redes-sociais">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!--Página de Imobiliária com Flexbox
+
+Enunciado: Nesta atividade, você vai organizar a estrutura de uma página de imobiliária usando Flexbox. O objetivo é criar seções de destaque para os imóveis e depoimentos de clientes, garantindo que os elementos se alinhem e se distribuam de forma harmoniosa e profissional, tanto em telas grandes quanto em telas menores.
+
+Instruções:
+1 - A seção com a classe properties deve ser um contêiner flexível. Os imóveis (.property-card) devem se organizar em linhas e quebrar para a linha de baixo quando não houver espaço suficiente.
+2 - Dentro da seção .properties, os cards de imóveis devem ser distribuídos para que o espaço entre eles seja igual.
+3 - A seção de depoimentos (.testimonials) também deve ser um contêiner flexível. Os depoimentos (.testimonial-card) devem ser centralizados tanto na horizontal quanto na vertical.
+4 - No rodapé (footer), alinhe o texto e os links de forma que o texto de direitos autorais fique à esquerda e o menu de links à direita.
+5 - Em todos os cartões, como os de imóveis e depoimentos, os elementos internos (título, texto, botões, etc.) devem ser alinhados de forma centralizada.-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imobiliária XYZ - Seu Imóvel Ideal</title>
+    <link rel="stylesheet" href="atividade07.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Imobiliária XYZ</h1>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Imóveis</a>
+            <a href="#">Serviços</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <div><h2>Imóveis em Destaque:</h2></div>
+        <section class="properties">
+            <div class="property-card">
+                <img src="https://picsum.photos/id/191/400/250" alt="Casa Moderna">
+                <h3>Casa com 3 Quartos</h3>
+                <p>Jardim Botânico</p>
+                <span>R$ 750.000</span>
+                <a href="#">Ver detalhes</a>
+            </div>
+            <div class="property-card">
+                <img src="https://picsum.photos/id/192/400/250" alt="Apartamento com vista">
+                <h3>Apartamento Luxuoso</h3>
+                <p>Centro da Cidade</p>
+                <span>R$ 1.200.000</span>
+                <a href="#">Ver detalhes</a>
+            </div>
+            <div class="property-card">
+                <img src="https://picsum.photos/id/193/400/250" alt="Cobertura">
+                <h3>Cobertura Duplex</h3>
+                <p>Praia do Sol</p>
+                <span>R$ 2.500.000</span>
+                <a href="#">Ver detalhes</a>
+            </div>
+            <div class="property-card">
+                <img src="https://picsum.photos/id/194/400/250" alt="Sítio">
+                <h3>Sítio com Lazer</h3>
+                <p>Zona Rural</p>
+                <span>R$ 980.000</span>
+                <a href="#">Ver detalhes</a>
+            </div>
+        </section>
+
+        <div><h2>Depoimentos de Clientes:</h2></div>
+
+        <section class="testimonials">
+            <div class="testimonial-card">
+                <p>"Encontrei a casa dos meus sonhos. Atendimento impecável!"</p>
+                <span>- João S.</span>
+            </div>
+            <div class="testimonial-card">
+                <p>"Profissionais dedicados e transparentes. Recomendo muito!"</p>
+                <span>- Maria L.</span>
+            </div>
+            <div class="testimonial-card">
+                <p>"Excelente atendimento. Muito obrigado!"</p>
+                <span>- Alberto F.</span>
+            </div>            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Imobiliária XYZ. Todos os direitos reservados.</p>
+        <nav class="footer-nav">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de Uso</a>
+        </nav>
+    </footer>
+
+</body>
+</html>

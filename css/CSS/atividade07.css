@@ -1,0 +1,162 @@
+/*
+    Instruções do CSS:
+
+    Passo 1: Seção de Imóveis ('.properties')
+    - Transforme o elemento em um contêiner flexível.
+    - Defina o comportamento para que os itens quebrem a linha.
+    - Distribua o espaço restante entre os cards, com espaçamento igual.
+
+    Passo 2: Cartões de Imóveis ('.property-card')
+    - Para cada cartão de imóvel, use Flexbox para alinhar o conteúdo interno (título, texto, botão) ao centro, no eixo principal, e faça com que o layout seja em coluna.
+    - Adicione uma largura base de 300px para cada cartão, permitindo que eles cresçam para preencher o espaço.
+
+    Passo 3: Seção de Depoimentos ('.testimonials')
+    - Transforme o elemento em um contêiner flexível.
+    - Centralize os cartões de depoimento na horizontal e na vertical.
+
+    Passo 4: Rodapé ('footer')
+    - Transforme o rodapé em um contêiner flexível.
+    - Alinhe os itens para que o texto de direitos autorais fique à esquerda e os links à direita.
+    - Centralize os itens verticalmente.
+*/
+
+/* Estilos Gerais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f8f8f8;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+.header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    /* Transforme o header em flexbox para alinhar h1 e nav */
+    display: flex;
+   justify-content: space-between;
+    
+}
+
+.header nav a {
+    margin-left: 20px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+/* Passo 1 e 2: Seção de Imóveis */
+.properties {
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+
+
+    
+    /* Seu código para o contêiner de imóveis aqui */
+
+}
+
+.property-card {
+    background-color: #fff;
+    border: 1px solid #ad0606;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    flex-direction: column;
+    
+    /* Seu código para o cartão de imóvel aqui */
+    
+}
+
+.property-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.property-card span {
+    font-weight: bold;
+    color: #4CAF50;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.property-card a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Passo 3: Seção de Depoimentos */
+.testimonials {
+    background-color: #f1f1f1;
+    padding: 40px 20px;
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+     border: 1px solid #ad0606;
+   
+    
+    /* Seu código para o contêiner de depoimentos aqui */
+
+}
+
+.testimonial-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 10px;
+    max-width: 450px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    border: 1px solid #ad0606;
+}
+
+/* Passo 4: Rodapé */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Seu código para o rodapé aqui */
+
+}
+
+.footer-nav a {
+    margin-left: 15px;
+    font-size: 0.9em;
+}

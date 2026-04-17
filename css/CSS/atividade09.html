@@ -1,0 +1,50 @@
+<!--Painel Financeiro Pessoal (Nível Intermediário)
+
+Enunciado: O objetivo desta atividade é construir um painel de controle simples para finanças pessoais. Você usará Flexbox para organizar vários "cards" de informação, introduzindo o conceito de quebra de linha (flex-wrap) e espaçamento entre os itens (justify-content).
+
+Instruções:
+1 - Transforme o elemento com a classe dashboard em um contêiner flexível.
+2 - Faça com que os "cards" se organizem em linhas e quebrem para a próxima linha quando não houver espaço suficiente.
+3 - Defina o espaçamento entre os cards de forma que eles fiquem distribuídos uniformemente com um espaço entre eles, e que as extremidades do contêiner não tenham espaço extra.
+4 - Alinhe os cards verticalmente ao início da linha em que se encontram.-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Financeiro Flexbox</title>
+    <link rel="stylesheet" href="atividade09.css">
+</head>
+<body>
+
+    <header>
+        <h1>Meu Painel Financeiro</h1>
+        <p>Ajuste o CSS para organizar os cartões financeiros de forma responsiva.</p>
+    </header>
+
+    <main class="dashboard">
+        <div class="card card-income">
+            <h3>Renda Mensal</h3>
+            <p><strong>R$ 3.500,00</strong></p>
+        </div>
+        <div class="card card-expenses">
+            <h3>Despesas Fixas</h3>
+            <p><strong>R$ 1.200,00</strong></p>
+        </div>
+        <div class="card card-savings">
+            <h3>Meta de Poupança</h3>
+            <p><strong>R$ 500,00</strong></p>
+        </div>
+        <div class="card card-balance">
+            <h3>Saldo Atual</h3>
+            <p><strong>R$ 1.800,00</strong></p>
+        </div>
+        <div class="card card-goals">
+            <h3>Objetivos de Curto Prazo</h3>
+            <p><strong>Viagem a Gramado</strong></p>
+        </div>
+    </main>
+
+</body>
+</html>

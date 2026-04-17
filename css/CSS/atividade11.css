@@ -1,0 +1,51 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+}
+
+.galeria-flex {
+   display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+   padding: 5px;
+   color: rgb(0, 0, 0);
+   background-color: #ffffff;
+    border: 5px solid #000000;
+
+
+} /* Exercício 1: Coloque o código Flexbox aqui! */
+
+
+.aluno-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.4s ease;
+    
+}
+
+.aluno-card:hover {
+    transform: translateY(-5px);
+}
+
+.aluno-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #6c5ce7;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #6c5ce7;
+    margin-bottom: 30px;
+}

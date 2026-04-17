@@ -1,0 +1,63 @@
+/*
+    Instruções do CSS:
+
+    Passo 1: Container da Galeria
+    - Transforme o elemento com a classe 'gallery-container' em um contêiner flexível.
+    - Defina como os itens devem se comportar quando o espaço horizontal for esgotado.
+    - Distribua o espaço restante entre os itens, fazendo com que o espaçamento seja igual entre eles.
+    - Alinhe os itens ao início do contêiner no eixo vertical.
+
+    Passo 2: Estilos dos Itens
+    - Adicione uma margem de 10px a cada elemento com a classe 'gallery-item'.
+    - Defina uma largura de 250px para cada item, permitindo que eles cresçam e encolham.
+*/
+
+/* Estilos Gerais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f0f2f5;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Passo 1: Container da Galeria */
+.gallery-container {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+    /* Seu código flexbox para o container aqui */
+
+}
+
+/* Passo 2: Itens da Galeria */
+.gallery-item {
+    background-color: #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+   width: 100px;
+    
+    
+    /* Seu código para os itens aqui */
+
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

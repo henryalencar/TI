@@ -1,0 +1,65 @@
+/*
+    Instruções do CSS:
+
+    1. Transforme o elemento com a classe 'container' em um contêiner flexível.
+    2. Alinhe os itens horizontalmente ao centro do contêiner.
+    3. Distribua o espaço restante entre os itens, de forma que eles fiquem com o mesmo espaçamento entre si.
+    4. Quebre a linha quando não houver mais espaço.
+    5. No eixo vertical, alinhe os itens ao início do contêiner.
+    6. Adicione uma largura de 150px a cada 'item' e uma margem de 10px.
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #cfc1c1;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.container {
+    background-color: #333;
+    padding: 150px;
+    height: 70vh; /* Define uma altura para visualizar melhor o alinhamento vertical */
+   justify-content:space-around;
+   flex-direction: row;
+   display: flex;
+   flex-wrap: wrap;
+   
+  
+
+   
+
+   
+   
+
+
+    /* Seu código Flexbox começa aqui! */
+    
+}
+
+.item {
+    background-color: rgb(5, 74, 143);
+    color: white;
+    padding: 50px;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+    
+    
+    /* Seu código Flexbox continua aqui (se precisar)! */
+    
+}

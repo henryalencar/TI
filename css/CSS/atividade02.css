@@ -1,0 +1,130 @@
+/*
+    Instruções do CSS:
+
+    Passo 1: Header (Cabeçalho)
+    - Transforme o elemento com a classe 'flex-header' em um contêiner flexível.
+    - Alinhe os itens (o logo e o menu de navegação) para que um fique na extrema esquerda e o outro na extrema direita.
+
+    Passo 2: Main e Section (Conteúdo Principal)
+    - O elemento com a classe 'flex-main' deve ser um contêiner flexível.
+    - Centralize o elemento 'flex-section' tanto na horizontal quanto na vertical dentro de 'flex-main'.
+    - Transforme o elemento 'flex-section' em um contêiner flexível.
+    - No interior de 'flex-section', distribua os artigos com a classe 'flex-article' de forma que eles tenham o mesmo espaçamento entre si.
+    - Faça com que os artigos se quebrem para a linha de baixo quando não houver espaço suficiente.
+
+    Passo 3: Footer (Rodapé)
+    - Transforme o elemento com a classe 'flex-footer' em um contêiner flexível.
+    - Centralize o texto de direitos autorais e os links de redes sociais no eixo vertical.
+    - Alinhe-os para que o texto de direitos autorais fique à esquerda e os links de redes sociais à direita.
+
+    **Não se esqueça de usar as propriedades flexbox para cada passo!**
+*/
+
+/* Estilos gerais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+   
+}
+
+/* Passo 1: Header */
+.flex-header {
+    background-color: #333;
+    color: #ce1919;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    /* Seu código flexbox para o header aqui */
+}
+
+/* Passo 2: Main e Section */
+.flex-main {
+    background-color: #f9f9f9;
+    padding: 30px;
+    min-height: 60vh; /* Altura mínima para visualizar o alinhamento */
+    display: flex;
+   
+    justify-content: center;
+    gap: 15px;
+    margin: 15px;
+   
+    flex-wrap: wrap;
+
+
+
+    /* Seu código flexbox para o main aqui */
+}
+
+.flex-section {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: 15px;
+    gap: 20px;
+    
+    /* Seu código flexbox para a section aqui */
+}
+
+.flex-article {
+    background-color: #e9e9e9;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+    min-width: 250px;
+    gap: 15px;
+    
+}
+
+.flex-article h3 {
+    margin-bottom: 10px;
+}
+
+.flex-article a {
+    background-color: dodgerblue;
+    padding: 8px 15px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 10px;
+    gap: 15px;
+    
+}
+
+/* Passo 3: Footer */
+.flex-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    /* Seu código flexbox para o footer aqui */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.redes-sociais a {
+    margin: 0 5px;
+}

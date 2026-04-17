@@ -1,0 +1,47 @@
+/*
+    Instruções do CSS:
+
+    1. Use 'display: flex' no '.welcome-container' para transformá-lo em um contêiner flexível.
+    2. Use 'justify-content' para alinhar os itens horizontalmente (no eixo principal) ao centro.
+    3. Use 'align-items' para alinhar os itens verticalmente (no eixo transversal) ao centro.
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f0f4f8;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.welcome-container {
+    background-color: #e3f2fd;
+    height: 80vh; /* Aumenta a altura para você ver o alinhamento vertical */
+    border: 2px dashed #90caf9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Seu código Flexbox começa aqui! */
+    
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #bbdefb;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 250px;
+}
