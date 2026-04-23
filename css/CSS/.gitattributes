@@ -1,10 +1,2 @@
-atividade01.css linguist-detectable=false
-atividade02.css linguist-detectable=false
-atividade03.css linguist-detectable=false
-atividade04.css linguist-detectable=false
-atividade05.css linguist-detectable=false
-atividade06.css linguist-detectable=false
-atividade07.css linguist-detectable=false
-atividade08.css linguist-detectable=false
-atividade09.css linguist-detectable=false
-atividade10.css linguist-detectable=false
+atividade*.css linguist-detectable=false
+atividade0*.html linguist-detectable=false
