@@ -1,0 +1,1 @@
+[2026-05-18 20:09:11] ERRO CRÍTICO: SQLSTATE[HY000] [1045] Access denied for user 'usuario_errado'@'localhost' (using password: YES)

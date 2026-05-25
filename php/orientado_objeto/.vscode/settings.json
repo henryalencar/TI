@@ -1,0 +1,26 @@
+{
+    "files.autoSave": "afterDelay",
+    "github-enterprise.uri": "https://ss.ghe.com",
+    "github.copilot.advanced": {
+        "authProvider": "github-enterprise"
+    },
+
+    "editor.wordWrap": "on",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorBlinking": "smooth",
+
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Dark Modern",
+
+    "powermode.enabled": true,
+    "powermode.combo.counterEnabled": false,
+    "powermode.shake.enabled": false,
+
+    "basicUIAnimations.enabled": true,
+    "basicUIAnimations.cursorAnimation": true,
+    "basicUIAnimations.smoothTabs": true,
+    "basicUIAnimations.speed": 0.8,
+
+    "vscode-pets.theme": "castle",
+    "vscode-pets.position": "explorer"
+}
