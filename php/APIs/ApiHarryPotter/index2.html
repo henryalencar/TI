@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alunos de Hogwarts</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=IM+Fell+English:ital@0;1&family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style2.css">
+
+</head>
+<body>
+
+<canvas id="stars-canvas"></canvas>
+
+<header>
+  <div class="crest">⚡</div>
+  <h1>Alunos de Hogwarts</h1>
+  <p class="subtitle">Escola de Magia e Bruxaria</p>
+  <div class="header-line"></div>
+</header>
+
+<div class="controls">
+  <div class="search-wrap">
+    <input type="search" id="search" placeholder="Buscar aluno..." autocomplete="off">
+  </div>
+  <div class="house-filters">
+    <button class="house-btn active" data-house="">Todos</button>
+    <button class="house-btn" data-house="Gryffindor">🦁 Grifinória</button>
+    <button class="house-btn" data-house="Slytherin">🐍 Sonserina</button>
+    <button class="house-btn" data-house="Ravenclaw">🦅 Corvinal</button>
+    <button class="house-btn" data-house="Hufflepuff">🦡 Lufa-Lufa</button>
+  </div>
+</div>
+
+<div class="stats-bar" id="stats-bar"></div>
+
+<div id="loader" class="loader">
+  <div class="cauldron">🧪</div>
+  <p style="margin-top:1rem">Preparando a poção...</p>
+</div>
+
+<div class="grid" id="grid"></div>
+
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal" id="modal">
+    <button class="modal-close" id="modal-close">✕</button>
+    <div id="modal-content"></div>
+  </div>
+</div>
+<script src="script2.js"></script>
